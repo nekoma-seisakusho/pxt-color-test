@@ -23,7 +23,7 @@ namespace カラーセンサー {
     }
 
     //% block="RGB読み出し"
-    export function RGB_read() {
+    export function RGB_read():number{
         pins.i2cWriteNumber(
             42,
             3,
@@ -33,6 +33,6 @@ namespace カラーセンサー {
         R = pins.i2cReadNumber(42, NumberFormat.UInt16BE, true)
         G = pins.i2cReadNumber(42, NumberFormat.UInt16BE, true)
         B = pins.i2cReadNumber(42, NumberFormat.UInt16BE, true)
-
+        return R
     }
 }
