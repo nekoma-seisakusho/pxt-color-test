@@ -33,6 +33,6 @@ namespace カラーセンサー {
         R = pins.i2cReadNumber(42, NumberFormat.UInt16BE, true)
         G = pins.i2cReadNumber(42, NumberFormat.UInt16BE, true)
         B = pins.i2cReadNumber(42, NumberFormat.UInt16BE, true)
-        return R
+        return R;
     }
 }
