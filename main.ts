@@ -35,4 +35,10 @@ namespace カラーセンサー {
         B = pins.i2cReadNumber(42, NumberFormat.UInt16BE, true)
         return R;
     }
+
+    //% block="R読み出し"
+    export function R_read(): number {
+    
+        return R;
+    }
 }
